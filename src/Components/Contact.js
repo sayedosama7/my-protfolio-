@@ -13,17 +13,17 @@ const Contact = () => {
             <Form className='w-50 m-auto'>
 
               <FormGroup className='wow bounceInUp' data-wow-delay=".3s" data-wow-duration="1.5s">
-                <Input id="exampleName" name="text" placeholder="full name" type="text" />
+                <Input id="exampleName" name="text" placeholder="full name" type="text" required />
               </FormGroup>
 
               <FormGroup className='wow bounceInUp' data-wow-delay=".5s" data-wow-duration="1.5s">
-                <Input id="exampleEmail" name="email" placeholder="email" type="email" />
+                <Input id="exampleEmail" name="email" placeholder="email" type="email" required/>
               </FormGroup>
 
               <FormGroup className='wow bounceInUp' data-wow-delay=".7s" data-wow-duration="1.5s">
-                <Input id="exampleText" name="text" type="textarea" placeholder="your message" className='p-5' />
+                <Input id="exampleText" name="text" type="textarea" placeholder="your message" className='p-5' required/>
               </FormGroup>
-              <button type='button' className='btn btn-primary send m-auto d-block w-100 p-3 wow bounceInDown' data-wow-delay="1s" data-wow-duration="1.5s">send</button>
+              <button type='submit' className='btn btn-primary send m-auto d-block w-100 p-3 wow bounceInDown' data-wow-delay="1s" data-wow-duration="1.5s">send</button>
             </Form>
           </Col>
 
