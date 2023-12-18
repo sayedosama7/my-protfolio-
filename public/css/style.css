@@ -54,7 +54,13 @@ body {
 .btn-primary:hover {
     transform: scale(1.1);
 }
+@media (max-width:576px) {
+    .scroll-to-top {
+    bottom: 10px !important;
+    right: 2px !important;
+    }
 
+}
 /* End global  */
 
 /* start navbar  */

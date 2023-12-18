@@ -21,7 +21,7 @@ const HomePage = () => {
       <Contact />
       <MyLogo />
       <Footer />
-      <ScrollToTop smooth color='#7241dc' />
+      <ScrollToTop smooth color='#7241dc' className='scroll-to-top' />
     </div>
   )
 }
