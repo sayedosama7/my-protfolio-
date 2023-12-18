@@ -56,8 +56,8 @@ body {
 }
 @media (max-width:576px) {
     .scroll-to-top {
-    bottom: 10px !important;
-    right: 2px !important;
+    bottom: 20px !important;
+    right: 20px !important;
     }
 
 }
