@@ -7,7 +7,7 @@ const Contact = () => {
     <div>
       <Container fluid className='contact' id='contact'>
         <h2 className='text-center fw-bold text-white mb-5 wow bounceInUp' data-wow-delay=".1s" data-wow-duration="1.5s">contact</h2>
-        <Row> 
+        <Row>
           <Col md="12">
 
             <Form className='w-50 m-auto'>
@@ -17,11 +17,11 @@ const Contact = () => {
               </FormGroup>
 
               <FormGroup className='wow bounceInUp' data-wow-delay=".5s" data-wow-duration="1.5s">
-                <Input id="exampleEmail" name="email" placeholder="email" type="email" required/>
+                <Input id="exampleEmail" name="email" placeholder="email" type="email" required />
               </FormGroup>
 
               <FormGroup className='wow bounceInUp' data-wow-delay=".7s" data-wow-duration="1.5s">
-                <Input id="exampleText" name="text" type="textarea" placeholder="your message" className='p-5' required/>
+                <Input id="exampleText" name="text" type="textarea" placeholder="your message" className='p-5' required />
               </FormGroup>
               <button type='submit' className='btn btn-primary send m-auto d-block w-100 p-3 wow bounceInDown' data-wow-delay="1s" data-wow-duration="1.5s">send</button>
             </Form>

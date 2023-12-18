@@ -1,9 +1,26 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Container } from 'reactstrap'
 
 const NavBar = () => {
+    // to change burger classes
+    const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
+    const [menu_class, setMenuClass] = useState("menu hidden")
+    const [isMenuClicked, setIsMenuClicked] = useState(false)
+
+    // toggle burger menu change
+    const updateMenu = () => {
+        if (!isMenuClicked) {
+            setBurgerClass("burger-bar clicked")
+            setMenuClass("menu visible")
+        }
+        else {
+            setBurgerClass("burger-bar unclicked")
+            setMenuClass("menu hidden")
+        }
+        setIsMenuClicked(!isMenuClicked)
+    }
     return (
         <div>
 
@@ -18,11 +35,16 @@ const NavBar = () => {
                                 loading="lazy"
                             />
                         </Link></a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon">
-                            <i className='fas fa-bars text-light'></i>
-                        </span>
-                    </button>
+                    <div data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div className='nav2 '>
+                            <div className={menu_class}></div>
+                            <div className="burger-menu" onClick={updateMenu}>
+                                <div className={burger_class} ></div>
+                                <div className={burger_class} ></div>
+                                <div className={burger_class} ></div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav m-auto">
