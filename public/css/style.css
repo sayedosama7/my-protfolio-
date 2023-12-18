@@ -617,7 +617,7 @@ body {
 
 /* start contact  */
 .contact {
-    padding: 100px;
+    padding: 100px 100px 20px 100px;
 }
 
 .contact form input,
@@ -653,7 +653,7 @@ textarea.form-control {
 
 /* End contact  */
 .logo {
-    padding-bottom: 50px;
+    padding: 50px;
 }
 
 .logo img {
