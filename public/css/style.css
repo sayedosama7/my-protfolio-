@@ -54,13 +54,15 @@ body {
 .btn-primary:hover {
     transform: scale(1.1);
 }
+
 @media (max-width:576px) {
     .scroll-to-top {
-    bottom: 20px !important;
-    right: 20px !important;
+        bottom: 20px !important;
+        right: 20px !important;
     }
 
 }
+
 /* End global  */
 
 /* start navbar  */
@@ -691,3 +693,100 @@ textarea.form-control {
 }
 
 /* End footer  */
+
+/* start Notification  */
+.alertBox {
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+    z-index: 9999;
+    background-color: #28144d;
+    width: 400px;
+    height: 100px;
+    border-left: 2px solid #fff;
+    -webkit-animation: fadein 0.5s; 
+    animation: fadein 0.5s;
+}
+
+.alertClose {
+    color: #fff;
+    float: right;
+    font-size: 20px;
+    margin: 2px 15px;
+    cursor: pointer;
+}
+
+.alertClose:hover {
+    color: #f00;
+}
+
+.notification-sign {
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+}
+
+
+.alertBox h1 {
+    color: #fff;
+    margin: 5px 10px;
+    text-align: left;
+    font-size: 17px;
+}
+
+.alertBox p {
+    text-align: center;
+    font-size: 23px;
+    color: #fff;
+    margin: 15px 30px;
+}
+
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+
+    to {
+        right: 1%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+
+    to {
+        right: 1%;
+        opacity: 1;
+    }
+}
+
+@media (max-width:576px) {
+    .alertBox {
+        width: 180px;
+        height: 60px;
+        right: 2%;
+    }
+
+    .alertBox h1 {
+        display: none;
+    }
+
+    .alertBox p {
+        font-size: 12px;
+        margin: 12px 50px; 
+    }
+    .notification-sign {
+        font-size: 20px; 
+    }
+}
+
+/* End Notification  */

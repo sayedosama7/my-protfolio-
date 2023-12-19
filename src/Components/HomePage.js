@@ -8,12 +8,14 @@ import ScrollToTop from 'react-scroll-to-top';
 import Contact from './Contact';
 import Footer from './Footer';
 import MyLogo from './MyLogo';
+import Notifacation from './Notifacation';
 
 
 const HomePage = () => {
   return (
     <div>
       <NavBar />
+      <Notifacation/>
       <Header />
       <About />
       <Skills />
